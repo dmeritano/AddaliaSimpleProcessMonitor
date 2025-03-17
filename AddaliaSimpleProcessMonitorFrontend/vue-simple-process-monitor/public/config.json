@@ -1,0 +1,6 @@
+{
+    "backendServiceURI-para-desa-tema-proxy-cors-vue.config.js" : "/AddaliaSimpleProcessMonitorBackend",
+    "backendServiceURI-para-prod-example" : "http://localhost:8080/AddaliaSimpleProcessMonitorBackend",
+    "backendServiceURI" : "http://localhost:8080/AddaliaSimpleProcessMonitorBackend",
+    "intervalToCheckForDataUpdate" : 180000
+}

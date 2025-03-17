@@ -1,0 +1,55 @@
+{
+	"dmsList" : [
+		{
+			"configId":1,
+			"dmsName":"Factory Recursos Apelacion",
+			"dmsUrl": "http://localhost/DmsRestServiceReA",
+			"dmsUser" : "usuario",
+			"dmsPass" : "password",
+			"queries" : [
+				{
+					"query":"Recurso_Apelacion$#NumeroCola=2",
+					"name":"Pendientes de Grabacion"
+				},
+				{
+					"query":"Recurso_Apelacion$#NumeroCola=9",
+					"name":"Pendientes de Revision"
+				},
+				{
+					"query":"Recurso_Apelacion$#NumeroCola=0",
+					"name":"Pendientes OCR"
+				},
+				{
+					"query":"Recurso_Apelacion$#NumeroCola=3",
+					"name":"Pendientes Envio"
+				},				
+				{
+					"query":"Recurso_Apelacion$#NumeroCola=5",
+					"name":"Pendientes Envio Mail"
+				},
+				{
+					"query":"Recurso_Apelacion$#NumeroCola=4",
+					"name":"Total exportados"
+				}				
+			]
+		},
+		{
+			"configId":2,
+			"dmsName":"Recursos Apelacion Consulta Web",			
+			"dmsUrl": "http://localhost/DmsRestService",
+			"dmsUser" : "usuario",
+			"dmsPass" : "password",
+			"queries" : [
+				{
+					"query":"Recurso_Apelacion",
+					"name":"Expedientes Recursos de Apelacion"
+				},
+				{
+					"query":"Expediente_Vehiculos",
+					"name":"Expedientes Vehiculos"
+				}							
+			]
+		}
+		
+	]
+}

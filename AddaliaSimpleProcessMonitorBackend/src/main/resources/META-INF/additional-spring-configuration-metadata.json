@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "app.images.base.folder",
+    "type": "java.lang.String",
+    "description": "A description for 'app.images.base.folder'"
+  },
+  {
+    "name": "app.ignore.invalid.ssl.certificates",
+    "type": "java.lang.String",
+    "description": "A description for 'app.ignore.invalid.ssl.certificates'"
+  },
+  {
+    "name": "app.elapsedtime.between.executions",
+    "type": "java.lang.String",
+    "description": "A description for 'app.elapsedtime.between.executions'"
+  }
+]}
