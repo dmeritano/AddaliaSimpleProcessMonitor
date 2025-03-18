@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
 public class AddaliaSimpleProcessMonitorBackendApplication implements CommandLineRunner{
@@ -22,10 +23,10 @@ public class AddaliaSimpleProcessMonitorBackendApplication implements CommandLin
 	@Override
 	public void run(String... args) throws Exception {		
 
-		/*
-		System.out.println("'admin' pass bcrypt es: " + new BCryptPasswordEncoder().encode("admin"));
-		System.out.println("'addalia' pass bcrypt es: " + new BCryptPasswordEncoder().encode("addalia"));
-		*/
+		
+		//System.out.println("'admin' pass bcrypt es: " + new BCryptPasswordEncoder().encode("admin"));
+		//System.out.println("'addalia' pass bcrypt es: " + new BCryptPasswordEncoder().encode("addalia2025"));
+		
 		
 	}	
 }
