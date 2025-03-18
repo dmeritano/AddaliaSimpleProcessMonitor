@@ -3,6 +3,14 @@
     <RouterLink to="/">Inicio</RouterLink>
     <RouterLink to="/about">Acerca De</RouterLink>
   </nav>
+
+  <footer class="text-center">
+    <div class="mb-3">
+      <small class="text-muted"
+        >&copy;ADDALIA. Todos los derechos reservados.</small
+      >
+    </div>
+  </footer>
 </template>
 
 <script>

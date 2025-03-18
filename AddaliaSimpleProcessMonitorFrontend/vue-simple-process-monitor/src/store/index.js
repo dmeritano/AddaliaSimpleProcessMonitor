@@ -56,6 +56,7 @@ export const store = createStore({
       context.commit("setToken", "")
       context.commit("setUsername", "")
       context.commit("setAuthenticated", false)
+      context.commit("setRetrievedData", { services: [] })
     },
     loginAction(context, data) {
       context.commit("setToken", data.token)
