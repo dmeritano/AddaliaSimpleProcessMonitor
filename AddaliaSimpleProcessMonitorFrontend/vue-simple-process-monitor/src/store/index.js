@@ -5,9 +5,8 @@ function initialState() {
   return {
     authenticated: false,
     token: "",
-    loggedInUser: "David",
+    loggedInUser: "",
     loading: false,
-    version: require("../../package.json").version,
     retrievedData: { services: [] },
   }
 }
@@ -62,6 +61,7 @@ export const store = createStore({
       context.commit("setToken", data.token)
       context.commit("setUsername", data.username)
       context.commit("setAuthenticated", true)
+      context.commit("setRetrievedData", { services: [] })
     },
   },
   modules: {},

@@ -6,8 +6,11 @@
       <i>Monitor/Dashboard</i> de Addalia(&copy;). Esta aplicaci&oacute;n se
       encarga de mostrar estad&iacute;sticas de cantidad de documentos
       acumulados, procesados y pendientes en los procesos y repositorios de
-      soluciones basadas en respositorios (DMS) de Addalia(&copy;)
+      soluciones basadas en respositorios (DMS) de Addalia(&copy;)>
     </p>
+    <small class="custom-version"
+      >Addalia(&copy;) Simple Process Monitor {{ version }}</small
+    >
   </div>
 </template>
 
@@ -21,7 +24,7 @@ export default {
       return ""
     },
     version() {
-      return this.$store.getters.version
+      return this.$AppConfig.version
     },
   },
 }

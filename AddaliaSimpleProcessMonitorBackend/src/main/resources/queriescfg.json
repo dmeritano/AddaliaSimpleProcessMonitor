@@ -2,18 +2,18 @@
 	"dmsList" : [
 		{
 			"configId":1,
-			"dmsName":"Factory Recursos Apelacion",
+			"dmsName":"Recursos de Apelación [Factory]",
 			"dmsUrl": "http://localhost/DmsRestServiceReA",
-			"dmsUser" : "usuario",
-			"dmsPass" : "password",
+			"dmsUser" : "DAVID",
+			"dmsPass" : "DAVID",
 			"queries" : [
 				{
 					"query":"Recurso_Apelacion$#NumeroCola=2",
-					"name":"Pendientes de Grabacion"
+					"name":"Pendientes de Grabación"
 				},
 				{
 					"query":"Recurso_Apelacion$#NumeroCola=9",
-					"name":"Pendientes de Revision"
+					"name":"Pendientes de Revisión"
 				},
 				{
 					"query":"Recurso_Apelacion$#NumeroCola=0",
@@ -21,11 +21,11 @@
 				},
 				{
 					"query":"Recurso_Apelacion$#NumeroCola=3",
-					"name":"Pendientes Envio"
+					"name":"Pendientes Envío"
 				},				
 				{
 					"query":"Recurso_Apelacion$#NumeroCola=5",
-					"name":"Pendientes Envio Mail"
+					"name":"Pendientes Envío Mail"
 				},
 				{
 					"query":"Recurso_Apelacion$#NumeroCola=4",
@@ -35,18 +35,18 @@
 		},
 		{
 			"configId":2,
-			"dmsName":"Recursos Apelacion Consulta Web",			
+			"dmsName":"Recursos de Apelación [Consulta Web]",			
 			"dmsUrl": "http://localhost/DmsRestService",
-			"dmsUser" : "usuario",
-			"dmsPass" : "password",
+			"dmsUser" : "CONFIGURACION_ATRIL",
+			"dmsPass" : "CONFIGURACION_ATRIL",
 			"queries" : [
 				{
 					"query":"Recurso_Apelacion",
-					"name":"Expedientes Recursos de Apelacion"
+					"name":"Expedientes Recursos de Apelación"
 				},
 				{
 					"query":"Expediente_Vehiculos",
-					"name":"Expedientes Vehiculos"
+					"name":"Expedientes de Vehículos"
 				}							
 			]
 		}

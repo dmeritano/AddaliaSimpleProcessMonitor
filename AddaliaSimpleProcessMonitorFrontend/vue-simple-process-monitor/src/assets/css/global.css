@@ -65,3 +65,8 @@ body {
 .text-default{
 	color: #0092A2;	
 }
+.custom-version {
+	font-size: smaller;
+	font-weight: light;
+	color: lightslategrey;
+}

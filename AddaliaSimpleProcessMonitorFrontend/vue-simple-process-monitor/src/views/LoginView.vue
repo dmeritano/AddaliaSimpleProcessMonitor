@@ -42,7 +42,7 @@
           <div class="col-md-12 form-group text-center">
             <button type="submit" class="btn btn-default">Entrar</button>
             <div class="text-center pt-2">
-              <small class="custom-version">v{{ appVersion }}</small>
+              <small class="custom-version">{{ appVersion }}</small>
             </div>
           </div>
         </div>
@@ -53,7 +53,7 @@
 
 <script>
 import authService from "@/services/apiService" // Ajusta la ruta
-import { mapMutations, mapActions, mapGetters } from "vuex"
+import { mapMutations, mapActions } from "vuex"
 export default {
   components: {},
   data() {
@@ -63,11 +63,10 @@ export default {
         password: null,
       },
       loginError: null,
+      appVersion: this.$AppConfig.version,
     }
   },
-  computed: {
-    ...mapGetters({ appVersion: "getAppVersion" }),
-  },
+  computed: {},
   methods: {
     ...mapMutations(["setLoading"]),
     ...mapActions(["loginAction"]),
@@ -97,10 +96,5 @@ export default {
   width: 320px;
   max-width: 100%;
   margin: 50px auto;
-}
-.custom-version {
-  font-size: smaller;
-  font-weight: lighter;
-  color: lightgrey;
 }
 </style>

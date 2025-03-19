@@ -1,6 +1,8 @@
 package com.addalia.simplemonitor.services;
 
 import java.io.File;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.Iterator;
 
@@ -57,7 +59,8 @@ public class DmsDataCollectorService {
 		try {
 			// Load configuration file
 			File resource = new ClassPathResource("queriescfg.json").getFile();
-			String text = new String(Files.readAllBytes(resource.toPath()));
+			//String text = new String(Files.readAllBytes(resource.toPath()));
+			String text = new String(Files.readAllBytes(resource.toPath()), StandardCharsets.UTF_8);
 
 			ObjectMapper objectMapper = new ObjectMapper();
 			QueriesConfiguration config = objectMapper.readValue(text, QueriesConfiguration.class);

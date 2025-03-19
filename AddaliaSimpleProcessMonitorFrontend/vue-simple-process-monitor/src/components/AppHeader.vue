@@ -24,6 +24,11 @@
             <router-link to="/about" class="nav-link">Acerca De</router-link>
           </li>
         </ul>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <h3 class="text-light">Addalia Simple Process Monitor</h3>
+          </li>
+        </ul>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item nav-link text-white me-3" v-if="authenticated">
             {{ getUsername }}
@@ -49,7 +54,9 @@
       </div>
     </div>
   </nav>
-  <h3 class="app-title">Addalia Simple Process Monitor</h3>
+  <h3 class="menu-collapse-title ms-3 mt-1 text-black-50">
+    Addalia Simple Process Monitor
+  </h3>
 </template>
 
 <script>
@@ -99,15 +106,27 @@ export default {
 }
 
 h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 0px;
+  padding: 0px;
   color: rgb(44, 44, 46);
   font-weight: bolder;
+  float: left;
 }
 @media screen and (max-width: 980px) {
   h3 {
     display: none;
     /*visibility: hidden;*/
+  }
+}
+@media (max-width: 991px) {
+  .menu-collapse-title {
+    display: block; /* O el valor que prefieras */
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-collapse-title {
+    display: none;
   }
 }
 </style>

@@ -5,6 +5,8 @@ import { store } from "./store"
 import loadAppConfig from "./services/appConfigService"
 import authService from "./services/apiService"
 
+const APP_VERSION = "v1.0.1"
+
 authService.setupAxiosInterceptors(router)
 
 //Bootstrap 5.x
@@ -38,6 +40,8 @@ export var appConfig = {}
 //Loading configuration
 const promiseConfig = loadAppConfig()
   .then((response) => {
+    //agregamos version app
+    response.version = APP_VERSION
     appConfig = response
     return new Promise((resolve) => {
       resolve(response)
